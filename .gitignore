@@ -1,0 +1,26 @@
+# Maven build output
+target/
+
+# Compiled Java files
+*.class
+
+# Logs
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE temporary files
+.metadata/
+.idea/
+*.swp
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+/src/main/resources/db.properties

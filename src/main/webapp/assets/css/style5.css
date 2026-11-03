@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f2ee;
+}
+
+/* TOP BAR */
+.address-topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3e2d2d;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* MAIN LAYOUT */
+.address-container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* LEFT FORM */
+.address-form {
+    flex: 2;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.address-form h3 {
+    margin-bottom: 20px;
+}
+
+.address-form input,
+.address-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.address-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;   /* 👈 THIS fixes vertical alignment */
+    gap: 4px;
+    font-size: 14px;
+    margin-top: 5px;       /* small clean spacing */
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    align-items: center;
+}
+ 
+ .checkbox input {
+    margin: 2;            /* removes browser default offset */
+    transform: translateY(5px); /* 👈 fine-tune alignment */
+}
+.save-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6b4f4f, #3e2d2d);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* RIGHT SUMMARY */
+.address-summary {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #6b4f4f, #3e2d2d);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* ===== BLUR OVERLAY (WORKING METHOD) ===== */
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(8px);
+background-position: 60% 40%;
+    background: rgba(255, 255, 255, 0.3);
+
+    z-index: 0;
+}
+
+/* KEEP CONTENT ABOVE BLUR */
+.address-container,
+.address-topbar {
+    position: relative;
+    z-index: 1;
+}

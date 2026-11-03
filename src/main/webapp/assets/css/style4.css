@@ -1,0 +1,222 @@
+/* BASE */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f2ee;
+}
+
+.cart-container,
+.cart-topbar {
+    position: relative;
+    z-index: 1;
+}
+   
+
+/* TOP BAR */
+.cart-topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 22px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    width: 42px;
+    height: 42px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3e2d2d;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    transform: scale(1.1);
+}
+
+/* CONTAINER */
+.cart-container {
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+}
+/* ITEM CARD */
+.cart-item {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    /* 🔥 GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.cart-item:hover {
+    transform: translateY(-3px);
+}
+
+/* IMAGE */
+.cart-img {
+    width: 95px;
+    height: 125px;
+    object-fit: contain;
+    background: #f5f2ee;
+    border-radius: 10px;
+}
+
+/* DETAILS */
+.cart-details {
+    flex: 1;
+    margin-left: 18px;
+}
+
+.cart-details h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart-details p {
+    margin: 6px 0;
+}
+
+.price {
+    color: #6b4f4f;
+    font-weight: 600;
+}
+
+/* QUANTITY */
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity form button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.quantity form button:hover {
+    background: #3e2d2d;
+    color: white;
+}
+
+.quantity span {
+    margin: 0 12px;
+    font-weight: 500;
+}
+
+/* REMOVE BUTTON */
+.remove-btn {
+    background: #f8f8f8;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.remove-btn:hover {
+    background: #ff4d4d;
+    color: white;
+}
+
+/* ===== BOTTOM SUMMARY BAR ===== */
+.cart-summary {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 18px 20px;
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.12);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* ROWS */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.total {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #6b4f4f, #3e2d2d);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    transform: scale(1.02);
+}
+
+/* EMPTY */
+.empty-cart {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 18px;
+    color: #666;
+}
+.cart-container,
+.cart-topbar {
+    position: relative;
+    z-index: 1;
+}
+/* ===== BACKGROUND LAYER (FINAL WORKING) ===== */
+.bg-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url("/aura/assets/images/cart.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 85% 15%;
+
+    filter: blur(1px);
+    transform: scale(1.1);
+
+    z-index: -1;   /* ✅ FINAL FIX */
+}
