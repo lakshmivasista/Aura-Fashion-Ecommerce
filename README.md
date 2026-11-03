@@ -1,254 +1,222 @@
-\# AURA — Fashion E-Commerce Platform
 
+<div align="center">
 
+# AURA ✦
 
-AURA is a full-stack fashion e-commerce web application designed to provide a smooth online shopping experience with AI-powered Virtual Try-On functionality
+### Fashion, thoughtfully experienced
 
+A full-stack fashion e-commerce platform that brings together  
+seamless online shopping, store management and AI-powered Virtual Try-On
 
+<br/>
 
-\## ✨ Features
+![Java](https://img.shields.io/badge/Java-17-51352F?style=for-the-badge&logo=openjdk&logoColor=white)
+![JSP](https://img.shields.io/badge/JSP-Servlets-754D43?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-Database-8B6F61?style=for-the-badge&logo=mysql&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-Build%20Tool-51352F?style=for-the-badge&logo=apachemaven&logoColor=white)
 
+<br/>
 
+**[Explore Source Code](https://github.com/lakshmivasista/Aura-Fashion-Ecommerce)**
 
-\### Customer Features
+</div>
 
-\- User registration and login
+---
 
-\- Browse fashion products
+## ✦ About AURA
 
-\- Product details and size selection
+AURA is a full-stack fashion e-commerce web application designed to deliver a smooth and engaging online shopping experience
 
-\- Wishlist management
+Beyond traditional shopping functionality, AURA introduces an AI-powered Virtual Try-On experience that allows customers to preview selected garments on their own photos before adding the actual product to their cart
 
-\- Shopping cart with size-specific variants
+The platform also includes a dedicated admin workspace for managing products, customers, orders and store analytics
 
-\- Delivery address management
+## ✨ Features at a Glance
 
-\- Checkout and order placement
+### 🛍️ Customer Shopping Experience
 
-\- Order history and order cancellation
+- User registration and secure login flow
+- Browse and explore fashion collections
+- Product details with available size variants
+- Wishlist management
+- Shopping cart with size-specific product variants
+- Delivery address management
+- Checkout and order placement
+- Order history and order cancellation
+- Multiple payment method selection
 
-\- AI-powered Virtual Try-On to preview selected garments
+### 👑 Admin Control Center
 
+- Centralized admin dashboard
+- Product management — add, edit and delete products
+- Customer order management
+- Order status management
+- Registered user overview
+- Store analytics and performance insights
+- Session-based login and logout functionality
 
+---
 
-\### Admin Features
+## 🤍 AI Virtual Try-On — Experience Before You Buy
 
-\- Admin dashboard
+One of AURA's key highlights is its AI-powered Virtual Try-On integration
 
-\- Product management — add, edit and delete products
+Customers can select a garment from the AURA collection, upload their personal photo and generate an AI-based preview of how the selected garment may look on them
 
-\- Customer order management
+**How it works**
 
-\- Order status updates
+1. Choose a garment from the AURA collection
+2. Upload your personal photo
+3. Select the garment category
+4. Generate your virtual try-on preview
+5. Choose the actual product size
+6. Add the tried-on garment to your shopping cart
 
-\- Registered user management
+The generated preview is an estimate and may differ from the actual garment fit, fabric, colour and appearance
 
-\- Store analytics
+---
 
+## ⚙️ Technology Stack
 
-
-\### AI Virtual Try-On
-
-\- Upload a personal photo
-
-\- Select a garment from the AURA collection
-
-\- Generate an AI-based virtual try-on preview
-
-\- Select the garment size and add the tried-on product to the cart
-
-
-
-The generated preview is an estimate and may differ from the actual garment fit and appearance
-
-
-
-\## 🛠️ Technology Stack
-
-
-
-| Area | Technologies |
-
-|---|---|
-
-| Backend | Java 17, Jakarta Servlets, JSP, JDBC |
-
+| Layer | Technologies |
+|:--|:--|
+| Backend | Java 17, Jakarta Servlets, JSP |
 | Frontend | HTML5, CSS3, JavaScript |
-
-| Database | MySQL |
-
+| Database | MySQL, JDBC |
 | AI Integration | Hosted FASHN Virtual Try-On service |
-
 | Build Tool | Apache Maven |
+| Application Server | Apache Tomcat 10.x |
+| Development Environment | Eclipse IDE |
 
-| Server | Apache Tomcat 10.x |
+---
 
-| IDE | Eclipse IDE |
-
-
-
-\## 📂 Project Structure
-
-
+## 🏗️ Project Architecture
 
 ```text
-
-aura/
-
-├── src/
-
-│   └── main/
-
-│       ├── java/
-
-│       │   └── com/aura/
-
-│       │       ├── controller/
-
-│       │       ├── dao/
-
-│       │       ├── model/
-
-│       │       └── util/
-
-│       ├── resources/
-
-│       └── webapp/
-
-│           ├── WEB-INF/
-
-│           │   └── views/
-
-│           └── assets/
-
+AURA
+│
+├── src/main/java/com/aura
+│   │
+│   ├── controller/       → Servlets and request handling
+│   ├── dao/              → Database operations
+│   ├── model/            → Application data models
+│   └── util/             → Database and AI utilities
+│
+├── src/main/resources/   → Local configuration
+│
+├── src/main/webapp/
+│   │
+│   ├── WEB-INF/
+│   │   ├── views/        → JSP pages
+│   │   └── web.xml       → Web application configuration
+│   │
+│   └── assets/
+│       ├── css/          → Stylesheets
+│       └── images/       → Product and application images
+│
 ├── pom.xml
-
 └── README.md
-
 ```
 
+---
 
+## 🚀 Run AURA Locally
 
-\## ⚙️ Prerequisites
+### Prerequisites
 
+- JDK 17 or later
+- Apache Maven
+- MySQL Server
+- Apache Tomcat 10.x
+- Eclipse IDE or another Java IDE
 
-
-\- JDK 17 or later
-
-\- Apache Maven
-
-\- MySQL Server
-
-\- Apache Tomcat 10.x
-
-\- Eclipse IDE or another Java IDE
-
-
-
-\## 🚀 Local Setup
-
-
-
-1\. Clone the repository
-
-
+### 1. Clone the repository
 
 ```bash
-
 git clone https://github.com/lakshmivasista/Aura-Fashion-Ecommerce.git
-
 ```
 
+### 2. Import the project
 
+Import the cloned folder into Eclipse as an existing Maven project
 
-2\. Open the project in Eclipse as an existing Maven project
+### 3. Configure the database
 
+Create the MySQL database `aura_db` and configure the required application tables
 
+Create a local configuration file at:
 
-3\. Create and configure the MySQL database named `aura\_db`
+`src/main/resources/db.properties`
 
-
-
-4\. Configure database credentials locally using `src/main/resources/db.properties`
-
-
+Add your own local database credentials:
 
 ```properties
-
-db.url=jdbc:mysql://localhost:3306/aura\_db
-
+db.url=jdbc:mysql://localhost:3306/aura_db
 db.username=root
-
-db.password=YOUR\_MYSQL\_PASSWORD
-
+db.password=YOUR_MYSQL_PASSWORD
 ```
 
+### 4. Configure AI credentials
 
+Set the required AI service credentials through the environment variable expected by the AI integration
 
-5\. Configure the required AI service credentials through the appropriate environment variable
+For the current integration, configure `HF_TOKEN` where required
 
-
-
-6\. Build the project using Maven
-
-
+### 5. Build the application
 
 ```bash
-
 mvn clean package
-
 ```
 
+### 6. Deploy on Apache Tomcat
 
+Deploy the generated WAR file to your Tomcat server and start the application
 
-7\. Deploy the generated WAR file to Apache Tomcat
-
-
-
-8\. Start Tomcat and open the application in your browser
-
-
+### 7. Open AURA
 
 ```text
-
 http://localhost:8080/aura/
-
 ```
 
+The URL and port may vary depending on your Tomcat configuration
 
+---
 
-\*\*Note:\*\* The database schema and sample data must be configured before running the application. Database credentials and AI service tokens should never be committed to GitHub
+## 🔐 Security & Configuration
 
+- Database credentials are kept in an ignored local configuration file
+- Database credentials can also be supplied through environment variables
+- AI service credentials should never be committed to the repository
+- Configure your own database and service credentials before running the application
 
+---
 
-\## 🔐 Security
+## 🌷 Project Highlights
 
+| Feature | Implementation |
+|:--|:--|
+| E-Commerce | Complete customer shopping workflow |
+| Admin Workspace | Centralized store management |
+| AI Integration | Virtual garment preview |
+| Database | MySQL-backed persistence |
+| Architecture | Java MVC-style application structure |
 
+---
 
-\- Database credentials are kept outside the tracked source files
+## 👩‍💻 Developer
 
-\- Environment variables can be used for database configuration
+<div align="center">
 
-\- Private API credentials should be configured through environment variables
+### Lakshmi 
 
+Full Stack Java Developer | AI & Machine Learning Enthusiast
 
+[![GitHub](https://img.shields.io/badge/GitHub-lakshmivasista-51352F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lakshmivasista)
 
-\## 👩‍💻 Developer
+<br/>
 
+*Built with creativity, curiosity and a passion for technology*
 
+**AURA ✦**
 
-\*\*Lakshmi\*\*
-
-
-
-GitHub: https://github.com/lakshmivasista
-
-
-
-\## 📌 Project Status
-
-
-
-Core customer shopping features, admin management modules and AI Virtual Try-On integration have been implemented
-
+</div>
